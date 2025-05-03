@@ -5,7 +5,7 @@ import { calculateFinalPrice } from '../services/discountService';
 
 const router = Router();
 
-router.post('/calculate-discount', (req: Request, res: Response) => {
+router.post('/calculate-discount', (req: any, res: any) => {
   try {
     const cart: CartItem[] = req.body.cart;
     const discounts: Discount[] = req.body.discounts;
